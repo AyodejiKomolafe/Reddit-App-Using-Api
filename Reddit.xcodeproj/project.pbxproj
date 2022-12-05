@@ -16,6 +16,8 @@
 		4861D1752936AA070037CAE5 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4861D1742936AA070037CAE5 /* Post.swift */; };
 		4861D1772936AC500037CAE5 /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4861D1762936AC500037CAE5 /* PostController.swift */; };
 		4861D17A2936AD9B0037CAE5 /* PostError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4861D1792936AD9B0037CAE5 /* PostError.swift */; };
+		4861D17C293783C90037CAE5 /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4861D17B293783C90037CAE5 /* PostListTableViewController.swift */; };
+		4861D180293787A80037CAE5 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4861D17F293787A80037CAE5 /* PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		4861D1742936AA070037CAE5 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		4861D1762936AC500037CAE5 /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
 		4861D1792936AD9B0037CAE5 /* PostError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostError.swift; sourceTree = "<group>"; };
+		4861D17B293783C90037CAE5 /* PostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
+		4861D17F293787A80037CAE5 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +66,10 @@
 		4861D1592936A6380037CAE5 /* Reddit */ = {
 			isa = PBXGroup;
 			children = (
-				4861D1782936AD830037CAE5 /* Helpers + Extensions */,
 				4861D1732936A6C40037CAE5 /* Model */,
 				4861D1702936A69C0037CAE5 /* Controllers */,
-				4861D16F2936A6850037CAE5 /* StoryBoards */,
+				4861D17D293787080037CAE5 /* Views */,
+				4861D1782936AD830037CAE5 /* Helpers + Extensions */,
 				4861D16E2936A66F0037CAE5 /* Resources */,
 				4861D15E2936A6380037CAE5 /* ViewController.swift */,
 			);
@@ -112,6 +116,7 @@
 		4861D1722936A6B30037CAE5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4861D17B293783C90037CAE5 /* PostListTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -130,6 +135,23 @@
 				4861D1792936AD9B0037CAE5 /* PostError.swift */,
 			);
 			path = "Helpers + Extensions";
+			sourceTree = "<group>";
+		};
+		4861D17D293787080037CAE5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4861D17E2937872E0037CAE5 /* CustomViews */,
+				4861D16F2936A6850037CAE5 /* StoryBoards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4861D17E2937872E0037CAE5 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				4861D17F293787A80037CAE5 /* PostTableViewCell.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +227,8 @@
 			files = (
 				4861D1772936AC500037CAE5 /* PostController.swift in Sources */,
 				4861D15F2936A6380037CAE5 /* ViewController.swift in Sources */,
+				4861D17C293783C90037CAE5 /* PostListTableViewController.swift in Sources */,
+				4861D180293787A80037CAE5 /* PostTableViewCell.swift in Sources */,
 				4861D15B2936A6380037CAE5 /* AppDelegate.swift in Sources */,
 				4861D15D2936A6380037CAE5 /* SceneDelegate.swift in Sources */,
 				4861D17A2936AD9B0037CAE5 /* PostError.swift in Sources */,

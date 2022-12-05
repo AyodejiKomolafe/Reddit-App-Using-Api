@@ -9,12 +9,21 @@ import Foundation
 
 enum PostError: LocalizedError {
     case invalidURL
+    case thrownError(Error)
+    case noData
+    case unableToDecode
     
     var errorDescription: String? {
         switch self {
             
         case .invalidURL:
             return "The server failed to reach the necessary URL."
+        case .thrownError(let error):
+            return "Error: \(error.localizedDescription) -- \(error)"
+        case .noData:
+            return "The Server Responded with no data"
+        case .unableToDecode:
+            return "Unable to decode"
         }
     }
 }
